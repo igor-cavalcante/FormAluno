@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+    <style>
+        label {
+            display: block;
+        }
+
+        fieldset {
+            margin: 2em 1em;
+        }
+    </style>
+</head>
+<body>
+<h1>Prova</h1>
+<form action="resultadoProva" method="post">
+    <label>Aluno <input type="text" name="aluno" placeholder="Informe seu nome"></label>
+    <br><br>
+    <fieldset>
+        <legend>01) Quais dos seguintes animais são mamíferos?</legend>
+        <select name="mamiferos" size="8" multiple="multiple">
+            <option value="tubarao">Tubarão</option>
+            <option value="golfinho">Golfinho</option>
+            <option value="tartaruga">Tartaruga</option>
+            <option value="onca">Onça</option>
+            <option value="sapo">Sapo</option>
+            <option value="largato">Lagarto</option>
+            <option value="mico">Mico Leão</option>
+            <option value="garca">Garça</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>02) Selecione todos os itens que sejam software</legend>
+        <label><input type="checkbox" name="software" value="sistema_operacional">Sistema Operacional</label>
+        <label><input type="checkbox" name="software" value="memoria_ram">Memória RAM</label>
+        <label><input type="checkbox" name="software" value="gpu">GPU</label>
+        <label><input type="checkbox" name="software" value="planilha_eletronica">Planilha Eletrônica</label>
+        <label><input type="checkbox" name="software" value="compilador">Compilador</label>
+    </fieldset>
+    <fieldset>
+        <legend>03) Em qual data iniciou a Primeira Guerra Mundial?</legend>
+        <input type="date" name="data_primeira_guerra">
+    </fieldset>
+    <fieldset>
+        <legend>04) Qual dos seguintes metais é líquido em temperatura ambiente?</legend>
+        <label><input type="radio" name="metal" value="cobre">Cobre</label>
+        <label><input type="radio" name="metal" value="ferro">Ferro</label>
+        <label><input type="radio" name="metal" value="mercurio">Mercúrio</label>
+        <label><input type="radio" name="metal" value="ouro">Ouro</label>
+    </fieldset>
+    <fieldset>
+        <legend>05) Qual o resultado da seguinte expressão: 2+4*5-3?</legend>
+        <input type="number" name="resultado_expressao">
+    </fieldset>
+    <input type="submit" value="Enviar">
+</form>
+</body>
+</html>
